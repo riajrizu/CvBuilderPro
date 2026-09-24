@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@layer utilities {
+  /* High resolution print styling rules */
+  @media print {
+    body {
+      background-color: white !important;
+      color: black !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+    }
+
+    /* Hide non-printable workspace elements */
+    header,
+    nav,
+    aside,
+    button,
+    .no-print,
+    .editor-panel,
+    .preview-controls {
+      display: none !important;
+    }
+
+    /* Target exact CV print container */
+    #cv-print-area {
+      position: absolute !important;
+      left: 0 !important;
+      top: 0 !important;
+      width: 100% !important;
+      max-width: none !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      box-shadow: none !important;
+      border: none !important;
+      border-radius: 0 !important;
+    }
+
+    @page {
+      size: A4 portrait;
+      margin: 12mm;
+    }
+  }
+}

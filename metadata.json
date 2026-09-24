@@ -1,0 +1,6 @@
+{
+  "name": "CV Builder",
+  "description": "Professional CV and resume builder with customizable templates, real-time preview, AI writing assistant, and export to PDF/JSON/Text.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
